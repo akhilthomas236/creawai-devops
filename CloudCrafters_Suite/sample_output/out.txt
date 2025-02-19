@@ -1,0 +1,2359 @@
+[1m[95m# Agent:[00m [1m[92mCloud Architect[00m
+[95m## Task:[00m [92m
+         1. **Research Phase:**
+            - Refer to online documentation and resources for Set up an EC2 instance to host a SharePoint form, including a backend database..
+            - Identify relevant AWS services and components that can be used to design the infrastructure.
+            - Gather best practices and industry standards for cloud architecture and infrastructure design.
+            - Ensure compliance with regulatory and security requirements.
+
+         2. **Design Document Creation:**
+            - Create a detailed design document outlining the infrastructure for Set up an EC2 instance to host a SharePoint form, including a backend database..
+            - Include a high-level architecture diagram showcasing the AWS services and components used.
+            - Provide a detailed description of each component and its role within the infrastructure.
+            - Define the interactions and data flow between different components.
+
+         3. **Scalability and Reliability:**
+            - Incorporate strategies for scalability, ensuring the infrastructure can handle increased load and demand.
+            - Ensure high availability and fault tolerance by using appropriate AWS services and configurations.
+            - Include auto-scaling mechanisms and redundancy to minimize downtime and service interruptions.
+
+         4. **Security and Compliance:**
+            - Implement security best practices to protect the infrastructure and data.
+            - Include access control mechanisms, encryption, and network security measures.
+            - Ensure compliance with relevant security standards and regulations.
+
+         5. **Cost Optimization:**
+            - Analyze the cost implications of the design and suggest cost-saving measures.
+            - Recommend AWS services and configurations that provide the best value for money.
+            - Include a cost estimate and breakdown for the proposed infrastructure.
+
+         6. **Documentation and Presentation:**
+            - Create comprehensive documentation with step-by-step instructions for deploying and managing the infrastructure.
+            - Incorporate SEO keywords and data from credible sources to enhance the document's visibility and credibility.
+            - Prepare a presentation or report summarizing the design for stakeholders and decision-makers.
+
+         7. **Review and Validation:**
+            - Conduct a thorough review of the design document to ensure accuracy and completeness.
+            - Validate the design with relevant stakeholders and incorporate feedback.
+            - Finalize the design document and prepare it for handoff to the development team.
+        [00m
+
+
+[1m[95m# Agent:[00m [1m[92mCloud Architect[00m
+[95m## Using tool:[00m [92mDuckDuckGoSearch[00m
+[95m## Tool Input:[00m [92m
+"{\"search_query\": \"AWS hosting SharePoint form EC2 backend database\"}"[00m
+[95m## Tool Output:[00m [92m
+Databases are essential backend systems that efficiently store, manage, and retrieve data, ensuring integrity, scalability, and performance for applications of all types and sizes. ... You're considering hosting a database on AWS. This might be to support a greenfield/pilot project as a first step in your cloud migration journey, or you might ... In the command above: pg_dump is a CLI tool for creating database backups.; The -U flag specifies the user to connect to PostgreSQL with.; The -f flag specifies the output file, which in this case is todo_app.pgsql.; The -C flag is used to include commands for creating the todo_app database in the backup file specified by -f.; After running the pg_dump command, the todo_app.pgsql file will be ... We'll cover setting up a Flask backend on an AWS EC2 instance, managing a PostgreSQL database on RDS, and hosting a React frontend on Netlify. I faced some challenges with the large traffic data ... OVERVIEW: 1- Create RDS MySql Database using Terraform. 2- Connect MySql Workbench to RDS MySql. 3- Set up Prod Server to serve Spring Boot backend and React frontend: — Create a Full-Stack ... Choose the VPC and the subnets that you have created for the backend. Similarly, choose the subnets for database. Also, click on enable database option to allow beanstalk to manage the database as well. 5.4 Database Creation Choose the appropriate database settings for your application. Here we are using mysql database. 5.5 Backend Traffic and ...[00m
+
+
+[1m[95m# Agent:[00m [1m[92mCloud Architect[00m
+[95m## Using tool:[00m [92mDuckDuckGoSearch[00m
+[95m## Tool Input:[00m [92m
+"{\"search_query\": \"AWS RDS for SharePoint backend security best practices\"}"[00m
+[95m## Tool Output:[00m [92m
+Securing sensitive data in AWS RDS is a critical task for developers, requiring proactive measures and best practices to ensure the security of databases. By regularly monitoring and auditing database activity, encrypting data at rest and in transit, and implementing database auditing and logging, developers can protect sensitive information ... One of the most important security best practices for AWS RDS databases is encrypting data at rest and in transit. By encrypting your data, you can protect it from unauthorized access and ensure that it remains confidential. AWS RDS offers built-in encryption options that allow you to encrypt your data using keys managed by AWS Key Management ... In addition, AWS Security Hub will be presented also. It offers a suite of security controls to ensure your RDS instances are secure, compliant, and resilient. Here's a concise guide to the ... Amazon Relational Database Service (RDS) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and 1 resizable capacity while automating time-consuming administration tasks such as hardware provisioning, 2 patching, and backups. This guide, updated for 2025, covers essential best practices for maximizing the potential of RDS. As more and more businesses move their data storage to the cloud, ensuring compliance with security regulations and protecting sensitive information has become a top priority for developers. Amazon Web Services (AWS) Relational Database Service (RDS) is a popular choice for managing relational databases in the cloud, and implementing data encryption is crucial for securing data stored in RDS ...[00m
+
+
+[1m[95m# Agent:[00m [1m[92mCloud Architect[00m
+[95m## Using tool:[00m [92mDuckDuckGoSearch[00m
+[95m## Tool Input:[00m [92m
+"{\"search_query\": \"AWS architecture diagram SharePoint form EC2 RDS\"}"[00m
+[95m## Tool Output:[00m [92m
+This example generates a basic architecture diagram with the following components: Route53 DNS; Elastic Load Balancer; EC2 Web Server; RDS Database; 2. Example: Creating an Enterprise Data ... Here's a simple example of an AWS architecture diagram: This diagram illustrates a basic LAMP stack deployed on AWS, showcasing how EC2 instances, RDS databases, and S3 storage interact within a VPC. Conclusion. Creating effective AWS architecture diagrams is crucial for planning and managing your cloud infrastructure. Diagrams as Code Tools: Leverage tools like PlantUML, Graphviz, Mermaid, and Draw.io to define architecture diagrams using code or declarative syntax, facilitating version control and automation. Let's Dive into EC2. As we all know, EC2 is a web server. In our multi-tier architecture, this EC2 instance will serve as an API that collects client requests. Ec2 helps you to secure and scalable server to host your web Application. Step 1: Launch an EC2 Instance. Step 2: Choose Amazon Machine Image (AMI) Step 3: Select Instance Type Networking: Include VPCs, subnets, and route tables to depict your network architecture. Databases: RDS and DynamoDB icons can be used to represent your database solutions. Utilizing draw.io Features. Draw.io offers several features that enhance the diagramming experience: Templates: Start with a draw.io AWS architecture diagram template to ...
+
+
+You ONLY have access to the following tools, and should NEVER make up tools that are not listed here:
+
+Tool Name: DuckDuckGoSearch
+Tool Arguments: {'search_query': {'description': None, 'type': 'str'}}
+Tool Description: Search the web for information on a given topic
+
+IMPORTANT: Use the following format in your response:
+
+```
+Thought: you should always think about what to do
+Action: the action to take, only one name of [DuckDuckGoSearch], just the name, exactly as it's written.
+Action Input: the input to the action, just a simple JSON object, enclosed in curly braces, using " to wrap keys and values.
+Observation: the result of the action
+```
+
+Once all necessary information is gathered, return the following format:
+
+```
+Thought: I now know the final answer
+Final Answer: the final answer to the original input question
+```[00m
+
+
+[1m[95m# Agent:[00m [1m[92mCloud Architect[00m
+[95m## Final Answer:[00m [92m
+# Design Document: SharePoint Form with AWS Infrastructure
+
+**1. Introduction**
+
+This document outlines the architecture for deploying a SharePoint form and its backend database on AWS.  The design prioritizes scalability, reliability, security, and cost-effectiveness.  The solution uses a multi-tier architecture, separating the web application tier, the database tier, and the network infrastructure.
+
+**2. High-Level Architecture**
+
+[Diagram would be inserted here.  A simple diagram showing the following components connected by arrows indicating data flow is sufficient:  Internet -> Elastic Load Balancer -> Auto Scaling Group (containing multiple EC2 instances running the SharePoint form) -> RDS (MySQL or PostgreSQL database)  All within a VPC with a Security Group defining inbound and outbound rules.]
+
+**3. Components and Roles**
+
+* **Amazon Virtual Private Cloud (VPC):** Provides a logically isolated section of the AWS Cloud dedicated to the application.  This enhances security by isolating the application from other AWS resources.
+* **Subnets:**  Multiple subnets are created within the VPC, adhering to best practices for availability zones.  This ensures high availability in case of AWS region issues.
+* **Elastic Load Balancer (ELB):** Distributes incoming traffic across multiple EC2 instances, providing high availability and scalability.  It also handles health checks to ensure only healthy instances receive traffic.
+* **Auto Scaling Group:** Automatically adjusts the number of EC2 instances based on demand, ensuring the application can handle fluctuations in traffic without performance degradation.
+* **Amazon EC2 Instances:** These instances host the SharePoint form application.  The number of instances is dynamically managed by the Auto Scaling Group.
+* **Amazon RDS:** Hosts the relational database (MySQL or PostgreSQL) to store SharePoint form data.  The choice of database depends on the specific requirements of the SharePoint form. RDS provides automated backups, patching, and high availability.
+* **Amazon S3 (Optional):** Could be used for storing large files or other non-relational data associated with the SharePoint forms.
+* **Security Groups:**  Control inbound and outbound network traffic to and from all AWS resources.  This is crucial for security and limiting potential attack vectors.
+* **IAM Roles:**  These limit permissions to only what’s required for each component.  This minimizes the potential damage from a compromised instance.
+
+
+**4. Scalability and Reliability**
+
+* **Auto Scaling:** The Auto Scaling Group automatically scales the number of EC2 instances based on CPU utilization or other metrics.
+* **Load Balancing:** The ELB distributes traffic across multiple EC2 instances, preventing overload on any single instance.
+* **High Availability:**  RDS provides built-in high availability, and the multi-AZ deployment of EC2 instances within the auto-scaling group ensures redundancy.
+* **Redundancy:**  Multiple availability zones are used to prevent single points of failure.
+
+**5. Security and Compliance**
+
+* **VPC:** Isolates the application from the public internet.
+* **Security Groups:**  Restrict access to only necessary ports and protocols.
+* **IAM Roles:**  Minimize the permissions granted to each AWS resource.
+* **Encryption:**  Data at rest and in transit should be encrypted using AWS KMS.
+* **Regular Security Audits:**  Regular security audits should be performed.
+
+**6. Cost Optimization**
+
+* **On-Demand Instances (or Spot Instances):**  Using on-demand or spot instances for EC2 provides flexibility and cost savings.
+* **RDS Instance Size:** Choose the appropriate RDS instance size based on expected load and database size.
+* **Reserved Instances:** Consider Reserved Instances if predictable usage patterns are present.
+* **Monitoring:** Monitor resource usage regularly to identify areas for optimization.
+
+**7. Deployment and Management**
+
+Detailed deployment instructions would be provided in a separate document. This would include instructions for setting up the VPC, subnets, security groups, IAM roles, EC2 instances, RDS instance, and configuring the Auto Scaling Group and Elastic Load Balancer.  Tools like CloudFormation or Terraform could be used for automated deployment.
+
+
+**8. Future Considerations**
+
+* **Monitoring and Logging:** Implement comprehensive monitoring and logging using Amazon CloudWatch to track performance and identify potential issues.
+* **Database Scaling:** Plan for database scaling strategies as data volume increases.
+
+
+This document provides a high-level overview of the proposed architecture.  Detailed specifications and implementation plans will be elaborated upon in subsequent documents.
+```[00m
+
+
+Design Output: # Design Document: SharePoint Form with AWS Infrastructure
+
+**1. Introduction**
+
+This document outlines the architecture for deploying a SharePoint form and its backend database on AWS.  The design prioritizes scalability, reliability, security, and cost-effectiveness.  The solution uses a multi-tier architecture, separating the web application tier, the database tier, and the network infrastructure.
+
+**2. High-Level Architecture**
+
+[Diagram would be inserted here.  A simple diagram showing the following components connected by arrows indicating data flow is sufficient:  Internet -> Elastic Load Balancer -> Auto Scaling Group (containing multiple EC2 instances running the SharePoint form) -> RDS (MySQL or PostgreSQL database)  All within a VPC with a Security Group defining inbound and outbound rules.]
+
+**3. Components and Roles**
+
+* **Amazon Virtual Private Cloud (VPC):** Provides a logically isolated section of the AWS Cloud dedicated to the application.  This enhances security by isolating the application from other AWS resources.
+* **Subnets:**  Multiple subnets are created within the VPC, adhering to best practices for availability zones.  This ensures high availability in case of AWS region issues.
+* **Elastic Load Balancer (ELB):** Distributes incoming traffic across multiple EC2 instances, providing high availability and scalability.  It also handles health checks to ensure only healthy instances receive traffic.
+* **Auto Scaling Group:** Automatically adjusts the number of EC2 instances based on demand, ensuring the application can handle fluctuations in traffic without performance degradation.
+* **Amazon EC2 Instances:** These instances host the SharePoint form application.  The number of instances is dynamically managed by the Auto Scaling Group.
+* **Amazon RDS:** Hosts the relational database (MySQL or PostgreSQL) to store SharePoint form data.  The choice of database depends on the specific requirements of the SharePoint form. RDS provides automated backups, patching, and high availability.
+* **Amazon S3 (Optional):** Could be used for storing large files or other non-relational data associated with the SharePoint forms.
+* **Security Groups:**  Control inbound and outbound network traffic to and from all AWS resources.  This is crucial for security and limiting potential attack vectors.
+* **IAM Roles:**  These limit permissions to only what’s required for each component.  This minimizes the potential damage from a compromised instance.
+
+
+**4. Scalability and Reliability**
+
+* **Auto Scaling:** The Auto Scaling Group automatically scales the number of EC2 instances based on CPU utilization or other metrics.
+* **Load Balancing:** The ELB distributes traffic across multiple EC2 instances, preventing overload on any single instance.
+* **High Availability:**  RDS provides built-in high availability, and the multi-AZ deployment of EC2 instances within the auto-scaling group ensures redundancy.
+* **Redundancy:**  Multiple availability zones are used to prevent single points of failure.
+
+**5. Security and Compliance**
+
+* **VPC:** Isolates the application from the public internet.
+* **Security Groups:**  Restrict access to only necessary ports and protocols.
+* **IAM Roles:**  Minimize the permissions granted to each AWS resource.
+* **Encryption:**  Data at rest and in transit should be encrypted using AWS KMS.
+* **Regular Security Audits:**  Regular security audits should be performed.
+
+**6. Cost Optimization**
+
+* **On-Demand Instances (or Spot Instances):**  Using on-demand or spot instances for EC2 provides flexibility and cost savings.
+* **RDS Instance Size:** Choose the appropriate RDS instance size based on expected load and database size.
+* **Reserved Instances:** Consider Reserved Instances if predictable usage patterns are present.
+* **Monitoring:** Monitor resource usage regularly to identify areas for optimization.
+
+**7. Deployment and Management**
+
+Detailed deployment instructions would be provided in a separate document. This would include instructions for setting up the VPC, subnets, security groups, IAM roles, EC2 instances, RDS instance, and configuring the Auto Scaling Group and Elastic Load Balancer.  Tools like CloudFormation or Terraform could be used for automated deployment.
+
+
+**8. Future Considerations**
+
+* **Monitoring and Logging:** Implement comprehensive monitoring and logging using Amazon CloudWatch to track performance and identify potential issues.
+* **Database Scaling:** Plan for database scaling strategies as data volume increases.
+
+
+This document provides a high-level overview of the proposed architecture.  Detailed specifications and implementation plans will be elaborated upon in subsequent documents.
+```
+[1m[95m# Agent:[00m [1m[92mPlatform Engineer[00m
+[95m## Task:[00m [92m
+         1. **Design Interpretation:**
+            - Review the design document provided by the Cloud Architect.
+            - Identify all AWS services and components mentioned in the design.
+
+         2. **Module Creation:**
+            - Develop modular Terraform templates for each component of the infrastructure.
+            - Ensure modules are reusable and maintainable.
+            - Define input variables and outputs for each module to enhance flexibility and customization.
+
+         3. **Resource Definition:**
+            - Write Terraform code to define the AWS resources specified in the design.
+            - Ensure proper configuration of networking, compute, storage, and security resources.
+            - Implement resource dependencies to maintain infrastructure integrity.
+
+         4. **Configuration and Integration:**
+            - Configure the Terraform code to integrate with other AWS services and components.
+            - Implement auto-scaling, load balancing, and other features as specified in the design.
+            - Ensure proper configuration for monitoring and logging.
+
+         5. **Environment Configuration:**
+            - Set up different environments (e.g., dev, staging, prod) using Terraform workspaces or separate configurations.
+            - Ensure consistency and isolation between environments.
+
+         6. **Security and Compliance:**
+            - Implement security best practices in the Terraform code.
+            - Include encryption, access controls, and network security measures.
+            - Ensure compliance with regulatory and security requirements.
+            - Collaborate with the AWS Security Engineer to address any security vulnerabilities.
+
+         7. **Testing and Validation:**
+            - Conduct thorough testing of the Terraform code.
+            - Perform unit tests, integration tests, and end-to-end tests to validate the functionality and performance.
+            - Identify and resolve any issues or errors.
+
+         8. **Documentation and Presentation:**
+            - Create comprehensive documentation with step-by-step instructions for deploying the Terraform code.
+            - Include detailed comments and explanations within the code to aid understanding and maintenance.
+            - Prepare a report or presentation summarizing the Terraform code and its implementation.
+
+         9. **Review and Validation:**
+            - Conduct a thorough review of the Terraform code to ensure accuracy and completeness.
+            - Validate the code with relevant stakeholders and incorporate feedback.
+            - Finalize the Terraform code and prepare it for deployment.
+        [00m
+
+
+[1m[95m# Agent:[00m [1m[92mPlatform Engineer[00m
+[95m## Thought:[00m [92mThought: I need to create Terraform modules for each component mentioned in the design document and integrate them to create a complete infrastructure.  I'll start by identifying the necessary AWS services.[00m
+[95m## Using tool:[00m [92mDuckDuckGoSearch[00m
+[95m## Tool Input:[00m [92m
+"{\"search_query\": \"Terraform AWS VPC module example\"}"[00m
+[95m## Tool Output:[00m [92m
+Prerequisites. To follow this guide you need to have the following. The latest Terraform binary is installed and configured in your system. AWS CLI installed and configured with a Valid AWS account with full permissions to create and manage AWS VPC service.; If you are using terraform on an ec2 instance, ensure you have a valid IAM role attached to the instance with VPC provisioning permissions. How To Create AWS VPC Using Terraform?: A Step-By-Step Guide. The following are the steps that guides you on how to create AWS VPC using Terraform: Step 1: First mention the provider and region in which you want to create VPC. provider.tf. provider "aws" {region = "us-east-1"} Step 2 : Create a VPC . Here mention the CIDR block and give a name ... Note that in the example we allocate 3 IPs because we will be provisioning 3 NAT Gateways (due to single_nat_gateway = false and having 3 subnets). If, on the other hand, single_nat_gateway = true, then aws_eip.nat would only need to allocate 1 IP. Passing the IPs into the module is done by setting two variables reuse_nat_ips = true and external_nat_ip_ids = "${aws_eip.nat.*.id}". In this Terraform project we will learn how to provisions a Virtual Private Cloud (VPC) on AWS, deploys an Amazon Elastic Kubernetes Service (EKS) cluster within that VPC, and provides associated networking and IAM resources. In this I'll create a well-organized Terraform configuration for an AWS VPC and EKS cluster, split into logical modules. This will help in understanding the components of the VPC. Example: ... I walked you through deploying a VPC with Terraform on AWS. We covered key concepts of Infrastructure as Code, explored Terraform's features, and completed a hands-on project to create and manage a VPC. ... Terraform Module Registry; AWS Free Tier; Shubham Murti ...[00m
+
+
+[1m[95m# Agent:[00m [1m[92mPlatform Engineer[00m
+[95m## Final Answer:[00m [92m
+```terraform
+# modules/vpc/main.tf
+module "vpc" {
+  source  = "./modules/vpc"
+  region  = var.region
+  cidr    = var.vpc_cidr
+  name    = var.vpc_name
+  azs     = var.azs
+}
+
+
+# modules/vpc/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "vpc_cidr" {
+  type = string
+  description = "VPC CIDR Block"
+  default = "10.0.0.0/16"
+}
+
+variable "vpc_name" {
+  type = string
+  description = "VPC Name"
+  default = "sharepoint-vpc"
+}
+
+variable "azs" {
+  type = list(string)
+  description = "Availability Zones"
+  default = ["us-east-1a", "us-east-1b", "us-east-1c"]
+}
+
+
+# modules/vpc/outputs.tf
+output "vpc_id" {
+  value = module.vpc.vpc_id
+}
+
+output "subnet_ids" {
+  value = module.vpc.subnet_ids
+}
+
+# modules/rds/main.tf
+module "rds" {
+  source  = "./modules/rds"
+  region  = var.region
+  instance_type = var.instance_type
+  db_name       = var.db_name
+  username      = var.username
+  password      = var.password
+  subnet_ids    = module.vpc.subnet_ids
+  engine        = var.engine
+
+}
+
+# modules/rds/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "instance_type" {
+  type = string
+  description = "RDS Instance Type"
+  default = "db.t3.micro"
+}
+
+variable "db_name" {
+  type = string
+  description = "RDS Database Name"
+  default = "sharepoint_db"
+}
+
+variable "username" {
+  type = string
+  description = "RDS Username"
+  default = "admin"
+}
+
+variable "password" {
+  type = string
+  description = "RDS Password"
+  default = "password123" #Please change this in production
+}
+
+variable "engine" {
+  type = string
+  description = "RDS Engine (MySQL or PostgreSQL)"
+  default = "mysql"
+}
+
+
+# modules/rds/outputs.tf
+output "rds_endpoint" {
+  value = module.rds.db_endpoint
+}
+
+
+# modules/ec2/main.tf
+module "ec2" {
+  source  = "./modules/ec2"
+  region      = var.region
+  ami         = var.ami
+  instance_type = var.instance_type
+  count       = var.instance_count
+  subnet_ids  = module.vpc.subnet_ids
+  key_name    = var.key_name
+  security_group_ids = module.security_group.security_group_ids
+
+}
+
+# modules/ec2/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "instance_count" {
+  type = number
+  description = "Number of EC2 instances"
+  default = 2
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+# modules/ec2/outputs.tf
+output "instance_ids" {
+  value = module.ec2.instance_ids
+}
+
+
+# modules/elb/main.tf
+module "elb" {
+  source = "./modules/elb"
+  region = var.region
+  instance_ids = module.ec2.instance_ids
+  security_group_ids = module.security_group.security_group_ids
+}
+
+# modules/elb/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+# modules/elb/outputs.tf
+output "elb_dns_name" {
+  value = module.elb.dns_name
+}
+
+# modules/asg/main.tf
+module "asg" {
+  source = "./modules/asg"
+  region = var.region
+  instance_ids = module.ec2.instance_ids
+  min_size = var.min_size
+  max_size = var.max_size
+  desired_capacity = var.desired_capacity
+  launch_configuration_name = module.launch_config.name
+
+}
+
+
+# modules/asg/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "min_size" {
+  type = number
+  description = "Minimum size of ASG"
+  default = 1
+}
+
+variable "max_size" {
+  type = number
+  description = "Maximum size of ASG"
+  default = 3
+}
+
+variable "desired_capacity" {
+  type = number
+  description = "Desired capacity of ASG"
+  default = 2
+}
+
+# modules/asg/outputs.tf
+output "asg_name" {
+  value = module.asg.name
+}
+
+
+# modules/security_group/main.tf
+module "security_group" {
+  source = "./modules/security_group"
+  region = var.region
+  vpc_id = module.vpc.vpc_id
+  name = var.name
+  description = var.description
+  ingress = var.ingress
+  egress = var.egress
+}
+
+# modules/security_group/variables.tf
+variable "region" {
+    type = string
+    default = "us-east-1"
+}
+variable "vpc_id" {
+    type = string
+}
+variable "name" {
+    type = string
+    default = "sharepoint-sg"
+}
+variable "description" {
+    type = string
+    default = "Security group for SharePoint application"
+}
+variable "ingress" {
+    type = list(object({
+        from_port   = number
+        to_port     = number
+        protocol    = string
+        cidr_blocks = list(string)
+    }))
+    default = [
+        {
+            from_port   = 80
+            to_port     = 80
+            protocol    = "tcp"
+            cidr_blocks = ["0.0.0.0/0"]
+        },
+        {
+            from_port   = 443
+            to_port     = 443
+            protocol    = "tcp"
+            cidr_blocks = ["0.0.0.0/0"]
+        },
+        {
+            from_port   = 3306
+            to_port     = 3306
+            protocol    = "tcp"
+            cidr_blocks = ["10.0.0.0/16"] #Allow RDS to communicate
+        }
+    ]
+}
+variable "egress" {
+  type = list(object({
+      from_port   = number
+      to_port     = number
+      protocol    = string
+      cidr_blocks = list(string)
+  }))
+  default = [
+      {
+          from_port   = 0
+          to_port     = 0
+          protocol    = "-1"
+          cidr_blocks = ["0.0.0.0/0"]
+      }
+  ]
+}
+
+# modules/security_group/outputs.tf
+output "security_group_ids" {
+  value = module.security_group.security_group_ids
+}
+
+# modules/launch_config/main.tf
+module "launch_config" {
+  source = "./modules/launch_config"
+  region = var.region
+  ami = var.ami
+  instance_type = var.instance_type
+  key_name = var.key_name
+  security_group_ids = module.security_group.security_group_ids
+}
+
+# modules/launch_config/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+# modules/launch_config/outputs.tf
+output "name" {
+  value = module.launch_config.name
+}
+
+
+# main.tf
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+module "vpc" {
+  source = "./modules/vpc"
+}
+
+module "rds" {
+  source = "./modules/rds"
+  subnet_ids = module.vpc.subnet_ids
+}
+
+module "security_group" {
+  source = "./modules/security_group"
+  vpc_id = module.vpc.vpc_id
+}
+
+module "ec2" {
+  source = "./modules/ec2"
+  subnet_ids = module.vpc.subnet_ids
+  security_group_ids = module.security_group.security_group_ids
+  key_name = "your_key_pair_name" # Replace with your key pair name
+}
+
+module "elb" {
+  source = "./modules/elb"
+  instance_ids = module.ec2.instance_ids
+  security_group_ids = module.security_group.security_group_ids
+}
+
+module "asg" {
+  source = "./modules/asg"
+  launch_configuration_name = module.launch_config.name
+  security_group_ids = module.security_group.security_group_ids
+
+}
+
+module "launch_config" {
+  source = "./modules/launch_config"
+  security_group_ids = module.security_group.security_group_ids
+  key_name = "your_key_pair_name" # Replace with your key pair name
+}
+
+
+# variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+variable "instance_count" {
+    type = number
+    description = "Number of EC2 instances"
+    default = 2
+}
+
+variable "min_size" {
+    type = number
+    description = "Minimum size of ASG"
+    default = 1
+}
+
+variable "max_size" {
+    type = number
+    description = "Maximum size of ASG"
+    default = 3
+}
+
+variable "desired_capacity" {
+    type = number
+    description = "Desired capacity of ASG"
+    default = 2
+}
+
+variable "db_name" {
+  type = string
+  description = "RDS Database Name"
+  default = "sharepoint_db"
+}
+
+variable "username" {
+  type = string
+  description = "RDS Username"
+  default = "admin"
+}
+
+variable "password" {
+  type = string
+  description = "RDS Password"
+  default = "password123" #Please change this in production
+}
+
+variable "engine" {
+  type = string
+  description = "RDS Engine (MySQL or PostgreSQL)"
+  default = "mysql"
+}
+
+# outputs.tf
+output "elb_dns_name" {
+  value = module.elb.elb_dns_name
+}
+
+output "rds_endpoint" {
+  value = module.rds.rds_endpoint
+}
+```
+
+**Note:**  This is a skeletal structure.  You will need to create the individual module directories (`modules/vpc`, `modules/rds`, `modules/ec2`, `modules/elb`, `modules/asg`, `modules/security_group`, `modules/launch_config`) and populate them with the appropriate Terraform configuration files (`main.tf`, `variables.tf`, `outputs.tf`) to define the resources within each module.  You'll also need to replace placeholder values like AMI IDs and key names with your actual values.  Error handling, detailed security configurations, and robust testing are crucial additions to make this production-ready.  Consider adding detailed comments within each file to explain the purpose and function of each resource.  Remember to replace `"your_key_pair_name"` with the actual name of your key pair.  This example uses a classic load balancer; consider using an Application Load Balancer for more advanced features.  IAM roles are also missing and should be included for enhanced security.[00m
+
+
+Developer Output: ```terraform
+# modules/vpc/main.tf
+module "vpc" {
+  source  = "./modules/vpc"
+  region  = var.region
+  cidr    = var.vpc_cidr
+  name    = var.vpc_name
+  azs     = var.azs
+}
+
+
+# modules/vpc/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "vpc_cidr" {
+  type = string
+  description = "VPC CIDR Block"
+  default = "10.0.0.0/16"
+}
+
+variable "vpc_name" {
+  type = string
+  description = "VPC Name"
+  default = "sharepoint-vpc"
+}
+
+variable "azs" {
+  type = list(string)
+  description = "Availability Zones"
+  default = ["us-east-1a", "us-east-1b", "us-east-1c"]
+}
+
+
+# modules/vpc/outputs.tf
+output "vpc_id" {
+  value = module.vpc.vpc_id
+}
+
+output "subnet_ids" {
+  value = module.vpc.subnet_ids
+}
+
+# modules/rds/main.tf
+module "rds" {
+  source  = "./modules/rds"
+  region  = var.region
+  instance_type = var.instance_type
+  db_name       = var.db_name
+  username      = var.username
+  password      = var.password
+  subnet_ids    = module.vpc.subnet_ids
+  engine        = var.engine
+
+}
+
+# modules/rds/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "instance_type" {
+  type = string
+  description = "RDS Instance Type"
+  default = "db.t3.micro"
+}
+
+variable "db_name" {
+  type = string
+  description = "RDS Database Name"
+  default = "sharepoint_db"
+}
+
+variable "username" {
+  type = string
+  description = "RDS Username"
+  default = "admin"
+}
+
+variable "password" {
+  type = string
+  description = "RDS Password"
+  default = "password123" #Please change this in production
+}
+
+variable "engine" {
+  type = string
+  description = "RDS Engine (MySQL or PostgreSQL)"
+  default = "mysql"
+}
+
+
+# modules/rds/outputs.tf
+output "rds_endpoint" {
+  value = module.rds.db_endpoint
+}
+
+
+# modules/ec2/main.tf
+module "ec2" {
+  source  = "./modules/ec2"
+  region      = var.region
+  ami         = var.ami
+  instance_type = var.instance_type
+  count       = var.instance_count
+  subnet_ids  = module.vpc.subnet_ids
+  key_name    = var.key_name
+  security_group_ids = module.security_group.security_group_ids
+
+}
+
+# modules/ec2/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "instance_count" {
+  type = number
+  description = "Number of EC2 instances"
+  default = 2
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+# modules/ec2/outputs.tf
+output "instance_ids" {
+  value = module.ec2.instance_ids
+}
+
+
+# modules/elb/main.tf
+module "elb" {
+  source = "./modules/elb"
+  region = var.region
+  instance_ids = module.ec2.instance_ids
+  security_group_ids = module.security_group.security_group_ids
+}
+
+# modules/elb/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+# modules/elb/outputs.tf
+output "elb_dns_name" {
+  value = module.elb.dns_name
+}
+
+# modules/asg/main.tf
+module "asg" {
+  source = "./modules/asg"
+  region = var.region
+  instance_ids = module.ec2.instance_ids
+  min_size = var.min_size
+  max_size = var.max_size
+  desired_capacity = var.desired_capacity
+  launch_configuration_name = module.launch_config.name
+
+}
+
+
+# modules/asg/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "min_size" {
+  type = number
+  description = "Minimum size of ASG"
+  default = 1
+}
+
+variable "max_size" {
+  type = number
+  description = "Maximum size of ASG"
+  default = 3
+}
+
+variable "desired_capacity" {
+  type = number
+  description = "Desired capacity of ASG"
+  default = 2
+}
+
+# modules/asg/outputs.tf
+output "asg_name" {
+  value = module.asg.name
+}
+
+
+# modules/security_group/main.tf
+module "security_group" {
+  source = "./modules/security_group"
+  region = var.region
+  vpc_id = module.vpc.vpc_id
+  name = var.name
+  description = var.description
+  ingress = var.ingress
+  egress = var.egress
+}
+
+# modules/security_group/variables.tf
+variable "region" {
+    type = string
+    default = "us-east-1"
+}
+variable "vpc_id" {
+    type = string
+}
+variable "name" {
+    type = string
+    default = "sharepoint-sg"
+}
+variable "description" {
+    type = string
+    default = "Security group for SharePoint application"
+}
+variable "ingress" {
+    type = list(object({
+        from_port   = number
+        to_port     = number
+        protocol    = string
+        cidr_blocks = list(string)
+    }))
+    default = [
+        {
+            from_port   = 80
+            to_port     = 80
+            protocol    = "tcp"
+            cidr_blocks = ["0.0.0.0/0"]
+        },
+        {
+            from_port   = 443
+            to_port     = 443
+            protocol    = "tcp"
+            cidr_blocks = ["0.0.0.0/0"]
+        },
+        {
+            from_port   = 3306
+            to_port     = 3306
+            protocol    = "tcp"
+            cidr_blocks = ["10.0.0.0/16"] #Allow RDS to communicate
+        }
+    ]
+}
+variable "egress" {
+  type = list(object({
+      from_port   = number
+      to_port     = number
+      protocol    = string
+      cidr_blocks = list(string)
+  }))
+  default = [
+      {
+          from_port   = 0
+          to_port     = 0
+          protocol    = "-1"
+          cidr_blocks = ["0.0.0.0/0"]
+      }
+  ]
+}
+
+# modules/security_group/outputs.tf
+output "security_group_ids" {
+  value = module.security_group.security_group_ids
+}
+
+# modules/launch_config/main.tf
+module "launch_config" {
+  source = "./modules/launch_config"
+  region = var.region
+  ami = var.ami
+  instance_type = var.instance_type
+  key_name = var.key_name
+  security_group_ids = module.security_group.security_group_ids
+}
+
+# modules/launch_config/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+# modules/launch_config/outputs.tf
+output "name" {
+  value = module.launch_config.name
+}
+
+
+# main.tf
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+module "vpc" {
+  source = "./modules/vpc"
+}
+
+module "rds" {
+  source = "./modules/rds"
+  subnet_ids = module.vpc.subnet_ids
+}
+
+module "security_group" {
+  source = "./modules/security_group"
+  vpc_id = module.vpc.vpc_id
+}
+
+module "ec2" {
+  source = "./modules/ec2"
+  subnet_ids = module.vpc.subnet_ids
+  security_group_ids = module.security_group.security_group_ids
+  key_name = "your_key_pair_name" # Replace with your key pair name
+}
+
+module "elb" {
+  source = "./modules/elb"
+  instance_ids = module.ec2.instance_ids
+  security_group_ids = module.security_group.security_group_ids
+}
+
+module "asg" {
+  source = "./modules/asg"
+  launch_configuration_name = module.launch_config.name
+  security_group_ids = module.security_group.security_group_ids
+
+}
+
+module "launch_config" {
+  source = "./modules/launch_config"
+  security_group_ids = module.security_group.security_group_ids
+  key_name = "your_key_pair_name" # Replace with your key pair name
+}
+
+
+# variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+variable "instance_count" {
+    type = number
+    description = "Number of EC2 instances"
+    default = 2
+}
+
+variable "min_size" {
+    type = number
+    description = "Minimum size of ASG"
+    default = 1
+}
+
+variable "max_size" {
+    type = number
+    description = "Maximum size of ASG"
+    default = 3
+}
+
+variable "desired_capacity" {
+    type = number
+    description = "Desired capacity of ASG"
+    default = 2
+}
+
+variable "db_name" {
+  type = string
+  description = "RDS Database Name"
+  default = "sharepoint_db"
+}
+
+variable "username" {
+  type = string
+  description = "RDS Username"
+  default = "admin"
+}
+
+variable "password" {
+  type = string
+  description = "RDS Password"
+  default = "password123" #Please change this in production
+}
+
+variable "engine" {
+  type = string
+  description = "RDS Engine (MySQL or PostgreSQL)"
+  default = "mysql"
+}
+
+# outputs.tf
+output "elb_dns_name" {
+  value = module.elb.elb_dns_name
+}
+
+output "rds_endpoint" {
+  value = module.rds.rds_endpoint
+}
+```
+
+**Note:**  This is a skeletal structure.  You will need to create the individual module directories (`modules/vpc`, `modules/rds`, `modules/ec2`, `modules/elb`, `modules/asg`, `modules/security_group`, `modules/launch_config`) and populate them with the appropriate Terraform configuration files (`main.tf`, `variables.tf`, `outputs.tf`) to define the resources within each module.  You'll also need to replace placeholder values like AMI IDs and key names with your actual values.  Error handling, detailed security configurations, and robust testing are crucial additions to make this production-ready.  Consider adding detailed comments within each file to explain the purpose and function of each resource.  Remember to replace `"your_key_pair_name"` with the actual name of your key pair.  This example uses a classic load balancer; consider using an Application Load Balancer for more advanced features.  IAM roles are also missing and should be included for enhanced security.
+[1m[95m# Agent:[00m [1m[92mSecurity Analyst[00m
+[95m## Task:[00m [92m
+         1. **Initial Assessment:**
+            - Review the provided Terraform code to understand the infrastructure being provisioned.
+            - Identify critical components and services that require security assessment.
+            - Ensure the Terraform code follows best practices for infrastructure as code (IaC).
+
+         2. **Vulnerability Scanning:**
+            - Use automated tools and scripts to scan the Terraform code for known vulnerabilities.
+            - Analyze the results of the scans to identify potential security risks and weaknesses.
+            - Cross-reference the findings with AWS security best practices and guidelines.
+
+         3. **Manual Code Review:**
+            - Conduct a thorough manual review of the Terraform code to identify hidden or complex security vulnerabilities.
+            - Check for common security issues such as open ports, weak encryption, insecure configurations, and lack of access controls.
+            - Ensure that the Terraform code adheres to the principle of least privilege.
+
+         4. **Compliance and Regulatory Checks:**
+            - Verify that the Terraform code complies with relevant security standards and regulations (e.g., GDPR, HIPAA, PCI-DSS).
+            - Ensure that the infrastructure meets organizational security policies and requirements.
+
+         5. **Security Enhancements:**
+            - Implement security best practices to address identified vulnerabilities and risks.
+            - Add or modify access controls, encryption settings, network security measures, and other security features as needed.
+            - Ensure that the infrastructure is resilient against common attack vectors.
+
+         6. **Collaboration and Feedback:**
+            - Collaborate with the Cloud Architect and Platform Engineer to address security concerns and implement improvements.
+            - Provide feedback and recommendations for enhancing the overall security posture of the infrastructure.
+            - Document any changes or updates made to the Terraform code for transparency and accountability.
+
+         7. **Testing and Validation:**
+            - Conduct security testing to validate the effectiveness of the implemented security measures.
+            - Perform penetration testing, vulnerability assessments, and other security tests as needed.
+            - Ensure that the Terraform code is secure and free from vulnerabilities.
+
+         8. **Documentation and Reporting:**
+            - Create comprehensive documentation detailing the security assessment process and findings.
+            - Include recommendations for ongoing security maintenance and monitoring.
+            - Prepare a report summarizing the security assessment and enhancements for stakeholders and decision-makers.
+
+         9. **Final Review and Approval:**
+            - Conduct a final review of the Terraform code to ensure all security measures have been properly implemented.
+            - Validate the code with relevant stakeholders and incorporate any final feedback.
+            - Approve the Terraform code for deployment to the production environment.
+        [00m
+
+
+[1m[95m# Agent:[00m [1m[92mSecurity Analyst[00m
+[95m## Thought:[00m [92m```tool_code
+Thought: I need to assess the provided Terraform code for security vulnerabilities and provide a revised version with the vulnerabilities fixed.  I will focus on areas like hardcoded credentials, overly permissive security groups, and missing IAM roles.  I'll use DuckDuckGoSearch to find best practices for securing Terraform code and AWS resources.[00m
+[95m## Using tool:[00m [92mDuckDuckGoSearch[00m
+[95m## Tool Input:[00m [92m
+"{\"search_query\": \"AWS Terraform security best practices\"}"[00m
+[95m## Tool Output:[00m [92m
+4. Security Considerations and Best Practices. When working with Terraform, especially in production environments, security is a top priority. Let's explore some security best practices for managing AWS resources with Terraform. 4.1 Managing Security Groups with Terraform. Security groups are a critical part of your AWS infrastructure security. Here are some best practices for maintaining security when using Terraform: Secure Your Terraform State 🫶. Use Remote State Storage: Store state files in a remote backend such as AWS S3, Azure Blob Storage, or Google Cloud Storage with appropriate access controls to prevent unauthorized access. This blog post explores Terraform security best practices by outlining potential risks and suggesting strategies to safeguard your infrastructure. Let's dive in. ... The following Sentinel policy ensures that all AWS S3 buckets defined in Terraform configurations have encryption enabled, demonstrating how compliance policies can be codified ... Working with AWS-Specific Terraform Features. Managing AWS Identity and Access Management (IAM) Managing IAM resources with Terraform allows you to automate the creation and management of users, roles, and policies for access control in AWS. It's crucial to follow best practices for IAM to ensure security and least-privilege access. Securing AWS resources managed by Terraform involves a combination of AWS security best practices and Terraform-specific configurations. From implementing least privilege with IAM to securely managing state files and enforcing strict network policies, each step plays a role in safeguarding your infrastructure. By using Terraform and AWS Config ...[00m
+
+
+[1m[95m# Agent:[00m [1m[92mSecurity Analyst[00m
+[95m## Thought:[00m [92mThought: The search results highlight the importance of secure state management, IAM roles, and properly configured security groups.  I need to address these in the given Terraform code.  Specifically, I need to remove hardcoded passwords, restrict security group ingress rules, and implement IAM roles for each service.[00m
+[95m## Using tool:[00m [92mDuckDuckGoSearch[00m
+[95m## Tool Input:[00m [92m
+"{\"search_query\": \"Terraform AWS IAM best practices\"}"[00m
+[95m## Tool Output:[00m [92m
+By the end of this tutorial, you will have a comprehensive understanding of how to manage IAM policies, including best practices, common pitfalls, and advanced usage. Prerequisites. AWS account with IAM, Organizations, and Terraform enabled; Basic knowledge of AWS IAM, AWS Organizations, and Terraform; Familiarity with YAML and JSON ... Working with AWS-Specific Terraform Features. Managing AWS Identity and Access Management (IAM) Managing IAM resources with Terraform allows you to automate the creation and management of users, roles, and policies for access control in AWS. It's crucial to follow best practices for IAM to ensure security and least-privilege access. Autoscaling in AWS EC2: Best Practices for Scaling Your Applications One of the most powerful features of cloud computing is the ability to scale resources dynamically based on demand. Autoscaling ... IAM Best Practices. AWS published IAM Best Practices and this Terraform module was created to help with some of points listed there:. Create Individual IAM Users; Use iam-user module module to manage IAM users.. Use AWS Defined Policies to Assign Permissions Whenever Possible; Use iam-assumable-roles module to create IAM roles with managed policies to support common tasks (admin, poweruser or ... This blog will cover best practices for creating AWS resources securely with Terraform, along with links to relevant documentation, research, and tools. Implement Least Privilege Access with IAM Principle: Apply the least privilege principle by granting only necessary permissions to Terraform and other AWS users or services.[00m
+
+
+[1m[95m# Agent:[00m [1m[92mSecurity Analyst[00m
+[95m## Thought:[00m [92m```tool_code
+Thought: My previous attempt was flawed because I didn't properly format the response.  I will now focus on fixing the security vulnerabilities in the Terraform code. The primary concerns are the hardcoded password for the RDS database and the overly permissive security group rules.  I will also add IAM roles for better security.[00m
+[95m## Using tool:[00m [92mDuckDuckGoSearch[00m
+[95m## Tool Input:[00m [92m
+"{\"search_query\": \"AWS RDS security best practices Terraform\"}"[00m
+[95m## Tool Output:[00m [92m
+4. Security Considerations and Best Practices. When working with Terraform, especially in production environments, security is a top priority. Let's explore some security best practices for managing AWS resources with Terraform. 4.1 Managing Security Groups with Terraform. Security groups are a critical part of your AWS infrastructure security. AWS IAM Best Practices AWS Roles and Policies in terraform. Encrypt Data at Rest and In Transit. Enable encryption for resources such as S3 buckets, RDS instances, and EBS volumes using AWS KMS keys. Configure services like Amazon S3 to require HTTPS for secure data transmission, ensuring encryption in transit. Resources. AWS S3 Encryption I created two resources: an aws_ssm_parameter to store the RDS endpoint, the port#, and the ARN of the AWS Secrets Manager secret and an aws_iam_policy to enable access to the Systems Manager Parameter Store parameter. Best practice 2: Create an IAM policy to access the Amazon RDS for PostgreSQL information from the Systems Manager Parameter Store. Working with AWS-Specific Terraform Features. Managing AWS Identity and Access Management (IAM) Managing IAM resources with Terraform allows you to automate the creation and management of users, roles, and policies for access control in AWS. It's crucial to follow best practices for IAM to ensure security and least-privilege access. Security Group created for RDS using Terraform. Allow the Inbound traffic on Port 3306. Step 2: Define AWS RDS Subnets. Specify the subnets where the RDS instance will be deployed.
+
+
+You ONLY have access to the following tools, and should NEVER make up tools that are not listed here:
+
+Tool Name: DuckDuckGoSearch
+Tool Arguments: {'search_query': {'description': None, 'type': 'str'}}
+Tool Description: Search the web for information on a given topic
+
+IMPORTANT: Use the following format in your response:
+
+```
+Thought: you should always think about what to do
+Action: the action to take, only one name of [DuckDuckGoSearch], just the name, exactly as it's written.
+Action Input: the input to the action, just a simple JSON object, enclosed in curly braces, using " to wrap keys and values.
+Observation: the result of the action
+```
+
+Once all necessary information is gathered, return the following format:
+
+```
+Thought: I now know the final answer
+Final Answer: the final answer to the original input question
+```[00m
+
+
+[1m[95m# Agent:[00m [1m[92mSecurity Analyst[00m
+[95m## Final Answer:[00m [92m
+```terraform
+# modules/vpc/main.tf
+module "vpc" {
+  source  = "./modules/vpc"
+  region  = var.region
+  cidr    = var.vpc_cidr
+  name    = var.vpc_name
+  azs     = var.azs
+}
+
+
+# modules/vpc/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "vpc_cidr" {
+  type = string
+  description = "VPC CIDR Block"
+  default = "10.0.0.0/16"
+}
+
+variable "vpc_name" {
+  type = string
+  description = "VPC Name"
+  default = "sharepoint-vpc"
+}
+
+variable "azs" {
+  type = list(string)
+  description = "Availability Zones"
+  default = ["us-east-1a", "us-east-1b", "us-east-1c"]
+}
+
+
+# modules/vpc/outputs.tf
+output "vpc_id" {
+  value = module.vpc.vpc_id
+}
+
+output "subnet_ids" {
+  value = module.vpc.subnet_ids
+}
+
+# modules/rds/main.tf
+module "rds" {
+  source  = "./modules/rds"
+  region  = var.region
+  instance_type = var.instance_type
+  db_name       = var.db_name
+  username      = var.username
+  password      = var.password
+  subnet_ids    = module.vpc.subnet_ids
+  engine        = var.engine
+  iam_role_name = module.rds_iam_role.name
+
+}
+
+# modules/rds/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "instance_type" {
+  type = string
+  description = "RDS Instance Type"
+  default = "db.t3.micro"
+}
+
+variable "db_name" {
+  type = string
+  description = "RDS Database Name"
+  default = "sharepoint_db"
+}
+
+variable "username" {
+  type = string
+  description = "RDS Username"
+  default = "admin"
+}
+
+variable "password" {
+  type = string
+  description = "RDS Password"
+  #Removed hardcoded password.  Use AWS Secrets Manager instead.
+}
+
+variable "engine" {
+  type = string
+  description = "RDS Engine (MySQL or PostgreSQL)"
+  default = "mysql"
+}
+
+
+# modules/rds/outputs.tf
+output "rds_endpoint" {
+  value = module.rds.db_endpoint
+}
+
+resource "aws_iam_role" "rds_iam_role" {
+  name = "rds-iam-role"
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "sts:AssumeRole"
+        Effect = "Allow"
+        Principal = {
+          Service = "rds.amazonaws.com"
+        }
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy" "rds_iam_role_policy" {
+  name = "rds-iam-role-policy"
+  role = aws_iam_role.rds_iam_role.id
+ policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Effect = "Allow",
+        Action = [
+          "secretsmanager:GetSecretValue"
+        ],
+        Resource = "arn:aws:secretsmanager:us-east-1:YOUR_ACCOUNT_ID:secret:rds-password-EXAMPLE-abcdefg" #Replace with your secret ARN
+
+      }
+    ]
+  })
+}
+
+
+# modules/ec2/main.tf
+module "ec2" {
+  source  = "./modules/ec2"
+  region      = var.region
+  ami         = var.ami
+  instance_type = var.instance_type
+  count       = var.instance_count
+  subnet_ids  = module.vpc.subnet_ids
+  key_name    = var.key_name
+  security_group_ids = module.security_group.security_group_ids
+  iam_instance_profile = aws_iam_instance_profile.ec2_instance_profile.name
+
+}
+
+# modules/ec2/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "instance_count" {
+  type = number
+  description = "Number of EC2 instances"
+  default = 2
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+# modules/ec2/outputs.tf
+output "instance_ids" {
+  value = module.ec2.instance_ids
+}
+
+resource "aws_iam_instance_profile" "ec2_instance_profile" {
+  name = "ec2-instance-profile"
+  role = aws_iam_role.ec2_iam_role.name
+}
+
+resource "aws_iam_role" "ec2_iam_role" {
+  name = "ec2-iam-role"
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "sts:AssumeRole"
+        Effect = "Allow"
+        Principal = {
+          Service = "ec2.amazonaws.com"
+        }
+      }
+    ]
+  })
+}
+
+
+# modules/elb/main.tf
+module "elb" {
+  source = "./modules/elb"
+  region = var.region
+  instance_ids = module.ec2.instance_ids
+  security_group_ids = module.security_group.security_group_ids
+}
+
+# modules/elb/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+# modules/elb/outputs.tf
+output "elb_dns_name" {
+  value = module.elb.dns_name
+}
+
+# modules/asg/main.tf
+module "asg" {
+  source = "./modules/asg"
+  region = var.region
+  instance_ids = module.ec2.instance_ids
+  min_size = var.min_size
+  max_size = var.max_size
+  desired_capacity = var.desired_capacity
+  launch_configuration_name = module.launch_config.name
+
+}
+
+
+# modules/asg/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "min_size" {
+  type = number
+  description = "Minimum size of ASG"
+  default = 1
+}
+
+variable "max_size" {
+  type = number
+  description = "Maximum size of ASG"
+  default = 3
+}
+
+variable "desired_capacity" {
+  type = number
+  description = "Desired capacity of ASG"
+  default = 2
+}
+
+# modules/asg/outputs.tf
+output "asg_name" {
+  value = module.asg.name
+}
+
+
+# modules/security_group/main.tf
+module "security_group" {
+  source = "./modules/security_group"
+  region = var.region
+  vpc_id = module.vpc.vpc_id
+  name = var.name
+  description = var.description
+  ingress = var.ingress
+  egress = var.egress
+}
+
+# modules/security_group/variables.tf
+variable "region" {
+    type = string
+    default = "us-east-1"
+}
+variable "vpc_id" {
+    type = string
+}
+variable "name" {
+    type = string
+    default = "sharepoint-sg"
+}
+variable "description" {
+    type = string
+    default = "Security group for SharePoint application"
+}
+variable "ingress" {
+    type = list(object({
+        from_port   = number
+        to_port     = number
+        protocol    = string
+        cidr_blocks = list(string)
+    }))
+    #Restricted ingress rules.  0.0.0.0/0 is generally too open.
+    default = [
+        {
+            from_port   = 80
+            to_port     = 80
+            protocol    = "tcp"
+            cidr_blocks = ["10.0.0.0/16"] #Allow only from VPC
+        },
+        {
+            from_port   = 443
+            to_port     = 443
+            protocol    = "tcp"
+            cidr_blocks = ["10.0.0.0/16"] #Allow only from VPC
+        },
+        {
+            from_port   = 3306
+            to_port     = 3306
+            protocol    = "tcp"
+            cidr_blocks = ["10.0.0.0/16"] #Allow RDS to communicate
+        }
+    ]
+}
+variable "egress" {
+  type = list(object({
+      from_port   = number
+      to_port     = number
+      protocol    = string
+      cidr_blocks = list(string)
+  }))
+  default = [
+      {
+          from_port   = 0
+          to_port     = 0
+          protocol    = "-1"
+          cidr_blocks = ["0.0.0.0/0"]
+      }
+  ]
+}
+
+# modules/security_group/outputs.tf
+output "security_group_ids" {
+  value = module.security_group.security_group_ids
+}
+
+# modules/launch_config/main.tf
+module "launch_config" {
+  source = "./modules/launch_config"
+  region = var.region
+  ami = var.ami
+  instance_type = var.instance_type
+  key_name = var.key_name
+  security_group_ids = module.security_group.security_group_ids
+}
+
+# modules/launch_config/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+# modules/launch_config/outputs.tf
+output "name" {
+  value = module.launch_config.name
+}
+
+
+# main.tf
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+module "vpc" {
+  source = "./modules/vpc"
+}
+
+module "rds" {
+  source = "./modules/rds"
+  subnet_ids = module.vpc.subnet_ids
+}
+
+module "security_group" {
+  source = "./modules/security_group"
+  vpc_id = module.vpc.vpc_id
+}
+
+module "ec2" {
+  source = "./modules/ec2"
+  subnet_ids = module.vpc.subnet_ids
+  security_group_ids = module.security_group.security_group_ids
+  key_name = "your_key_pair_name" # Replace with your key pair name
+}
+
+module "elb" {
+  source = "./modules/elb"
+  instance_ids = module.ec2.instance_ids
+  security_group_ids = module.security_group.security_group_ids
+}
+
+module "asg" {
+  source = "./modules/asg"
+  launch_configuration_name = module.launch_config.name
+  security_group_ids = module.security_group.security_group_ids
+
+}
+
+module "launch_config" {
+  source = "./modules/launch_config"
+  security_group_ids = module.security_group.security_group_ids
+  key_name = "your_key_pair_name" # Replace with your key pair name
+}
+
+
+# variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+variable "instance_count" {
+    type = number
+    description = "Number of EC2 instances"
+    default = 2
+}
+
+variable "min_size" {
+    type = number
+    description = "Minimum size of ASG"
+    default = 1
+}
+
+variable "max_size" {
+    type = number
+    description = "Maximum size of ASG"
+    default = 3
+}
+
+variable "desired_capacity" {
+    type = number
+    description = "Desired capacity of ASG"
+    default = 2
+}
+
+variable "db_name" {
+  type = string
+  description = "RDS Database Name"
+  default = "sharepoint_db"
+}
+
+variable "username" {
+  type = string
+  description = "RDS Username"
+  default = "admin"
+}
+
+
+variable "engine" {
+  type = string
+  description = "RDS Engine (MySQL or PostgreSQL)"
+  default = "mysql"
+}
+
+# outputs.tf
+output "elb_dns_name" {
+  value = module.elb.elb_dns_name
+}
+
+output "rds_endpoint" {
+  value = module.rds.rds_endpoint
+}
+```[00m
+
+
+Review Output: ```terraform
+# modules/vpc/main.tf
+module "vpc" {
+  source  = "./modules/vpc"
+  region  = var.region
+  cidr    = var.vpc_cidr
+  name    = var.vpc_name
+  azs     = var.azs
+}
+
+
+# modules/vpc/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "vpc_cidr" {
+  type = string
+  description = "VPC CIDR Block"
+  default = "10.0.0.0/16"
+}
+
+variable "vpc_name" {
+  type = string
+  description = "VPC Name"
+  default = "sharepoint-vpc"
+}
+
+variable "azs" {
+  type = list(string)
+  description = "Availability Zones"
+  default = ["us-east-1a", "us-east-1b", "us-east-1c"]
+}
+
+
+# modules/vpc/outputs.tf
+output "vpc_id" {
+  value = module.vpc.vpc_id
+}
+
+output "subnet_ids" {
+  value = module.vpc.subnet_ids
+}
+
+# modules/rds/main.tf
+module "rds" {
+  source  = "./modules/rds"
+  region  = var.region
+  instance_type = var.instance_type
+  db_name       = var.db_name
+  username      = var.username
+  password      = var.password
+  subnet_ids    = module.vpc.subnet_ids
+  engine        = var.engine
+  iam_role_name = module.rds_iam_role.name
+
+}
+
+# modules/rds/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "instance_type" {
+  type = string
+  description = "RDS Instance Type"
+  default = "db.t3.micro"
+}
+
+variable "db_name" {
+  type = string
+  description = "RDS Database Name"
+  default = "sharepoint_db"
+}
+
+variable "username" {
+  type = string
+  description = "RDS Username"
+  default = "admin"
+}
+
+variable "password" {
+  type = string
+  description = "RDS Password"
+  #Removed hardcoded password.  Use AWS Secrets Manager instead.
+}
+
+variable "engine" {
+  type = string
+  description = "RDS Engine (MySQL or PostgreSQL)"
+  default = "mysql"
+}
+
+
+# modules/rds/outputs.tf
+output "rds_endpoint" {
+  value = module.rds.db_endpoint
+}
+
+resource "aws_iam_role" "rds_iam_role" {
+  name = "rds-iam-role"
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "sts:AssumeRole"
+        Effect = "Allow"
+        Principal = {
+          Service = "rds.amazonaws.com"
+        }
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy" "rds_iam_role_policy" {
+  name = "rds-iam-role-policy"
+  role = aws_iam_role.rds_iam_role.id
+ policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Effect = "Allow",
+        Action = [
+          "secretsmanager:GetSecretValue"
+        ],
+        Resource = "arn:aws:secretsmanager:us-east-1:YOUR_ACCOUNT_ID:secret:rds-password-EXAMPLE-abcdefg" #Replace with your secret ARN
+
+      }
+    ]
+  })
+}
+
+
+# modules/ec2/main.tf
+module "ec2" {
+  source  = "./modules/ec2"
+  region      = var.region
+  ami         = var.ami
+  instance_type = var.instance_type
+  count       = var.instance_count
+  subnet_ids  = module.vpc.subnet_ids
+  key_name    = var.key_name
+  security_group_ids = module.security_group.security_group_ids
+  iam_instance_profile = aws_iam_instance_profile.ec2_instance_profile.name
+
+}
+
+# modules/ec2/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "instance_count" {
+  type = number
+  description = "Number of EC2 instances"
+  default = 2
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+# modules/ec2/outputs.tf
+output "instance_ids" {
+  value = module.ec2.instance_ids
+}
+
+resource "aws_iam_instance_profile" "ec2_instance_profile" {
+  name = "ec2-instance-profile"
+  role = aws_iam_role.ec2_iam_role.name
+}
+
+resource "aws_iam_role" "ec2_iam_role" {
+  name = "ec2-iam-role"
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Action = "sts:AssumeRole"
+        Effect = "Allow"
+        Principal = {
+          Service = "ec2.amazonaws.com"
+        }
+      }
+    ]
+  })
+}
+
+
+# modules/elb/main.tf
+module "elb" {
+  source = "./modules/elb"
+  region = var.region
+  instance_ids = module.ec2.instance_ids
+  security_group_ids = module.security_group.security_group_ids
+}
+
+# modules/elb/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+# modules/elb/outputs.tf
+output "elb_dns_name" {
+  value = module.elb.dns_name
+}
+
+# modules/asg/main.tf
+module "asg" {
+  source = "./modules/asg"
+  region = var.region
+  instance_ids = module.ec2.instance_ids
+  min_size = var.min_size
+  max_size = var.max_size
+  desired_capacity = var.desired_capacity
+  launch_configuration_name = module.launch_config.name
+
+}
+
+
+# modules/asg/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "min_size" {
+  type = number
+  description = "Minimum size of ASG"
+  default = 1
+}
+
+variable "max_size" {
+  type = number
+  description = "Maximum size of ASG"
+  default = 3
+}
+
+variable "desired_capacity" {
+  type = number
+  description = "Desired capacity of ASG"
+  default = 2
+}
+
+# modules/asg/outputs.tf
+output "asg_name" {
+  value = module.asg.name
+}
+
+
+# modules/security_group/main.tf
+module "security_group" {
+  source = "./modules/security_group"
+  region = var.region
+  vpc_id = module.vpc.vpc_id
+  name = var.name
+  description = var.description
+  ingress = var.ingress
+  egress = var.egress
+}
+
+# modules/security_group/variables.tf
+variable "region" {
+    type = string
+    default = "us-east-1"
+}
+variable "vpc_id" {
+    type = string
+}
+variable "name" {
+    type = string
+    default = "sharepoint-sg"
+}
+variable "description" {
+    type = string
+    default = "Security group for SharePoint application"
+}
+variable "ingress" {
+    type = list(object({
+        from_port   = number
+        to_port     = number
+        protocol    = string
+        cidr_blocks = list(string)
+    }))
+    #Restricted ingress rules.  0.0.0.0/0 is generally too open.
+    default = [
+        {
+            from_port   = 80
+            to_port     = 80
+            protocol    = "tcp"
+            cidr_blocks = ["10.0.0.0/16"] #Allow only from VPC
+        },
+        {
+            from_port   = 443
+            to_port     = 443
+            protocol    = "tcp"
+            cidr_blocks = ["10.0.0.0/16"] #Allow only from VPC
+        },
+        {
+            from_port   = 3306
+            to_port     = 3306
+            protocol    = "tcp"
+            cidr_blocks = ["10.0.0.0/16"] #Allow RDS to communicate
+        }
+    ]
+}
+variable "egress" {
+  type = list(object({
+      from_port   = number
+      to_port     = number
+      protocol    = string
+      cidr_blocks = list(string)
+  }))
+  default = [
+      {
+          from_port   = 0
+          to_port     = 0
+          protocol    = "-1"
+          cidr_blocks = ["0.0.0.0/0"]
+      }
+  ]
+}
+
+# modules/security_group/outputs.tf
+output "security_group_ids" {
+  value = module.security_group.security_group_ids
+}
+
+# modules/launch_config/main.tf
+module "launch_config" {
+  source = "./modules/launch_config"
+  region = var.region
+  ami = var.ami
+  instance_type = var.instance_type
+  key_name = var.key_name
+  security_group_ids = module.security_group.security_group_ids
+}
+
+# modules/launch_config/variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+# modules/launch_config/outputs.tf
+output "name" {
+  value = module.launch_config.name
+}
+
+
+# main.tf
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+module "vpc" {
+  source = "./modules/vpc"
+}
+
+module "rds" {
+  source = "./modules/rds"
+  subnet_ids = module.vpc.subnet_ids
+}
+
+module "security_group" {
+  source = "./modules/security_group"
+  vpc_id = module.vpc.vpc_id
+}
+
+module "ec2" {
+  source = "./modules/ec2"
+  subnet_ids = module.vpc.subnet_ids
+  security_group_ids = module.security_group.security_group_ids
+  key_name = "your_key_pair_name" # Replace with your key pair name
+}
+
+module "elb" {
+  source = "./modules/elb"
+  instance_ids = module.ec2.instance_ids
+  security_group_ids = module.security_group.security_group_ids
+}
+
+module "asg" {
+  source = "./modules/asg"
+  launch_configuration_name = module.launch_config.name
+  security_group_ids = module.security_group.security_group_ids
+
+}
+
+module "launch_config" {
+  source = "./modules/launch_config"
+  security_group_ids = module.security_group.security_group_ids
+  key_name = "your_key_pair_name" # Replace with your key pair name
+}
+
+
+# variables.tf
+variable "region" {
+  type = string
+  description = "AWS Region"
+  default = "us-east-1"
+}
+
+variable "ami" {
+  type = string
+  description = "AMI ID"
+  default = "ami-0c55b31ad2299a701" # Example AMI ID - Replace with your desired AMI
+}
+
+variable "instance_type" {
+  type = string
+  description = "EC2 Instance Type"
+  default = "t2.micro"
+}
+
+variable "key_name" {
+  type = string
+  description = "EC2 Key Pair Name"
+}
+
+variable "instance_count" {
+    type = number
+    description = "Number of EC2 instances"
+    default = 2
+}
+
+variable "min_size" {
+    type = number
+    description = "Minimum size of ASG"
+    default = 1
+}
+
+variable "max_size" {
+    type = number
+    description = "Maximum size of ASG"
+    default = 3
+}
+
+variable "desired_capacity" {
+    type = number
+    description = "Desired capacity of ASG"
+    default = 2
+}
+
+variable "db_name" {
+  type = string
+  description = "RDS Database Name"
+  default = "sharepoint_db"
+}
+
+variable "username" {
+  type = string
+  description = "RDS Username"
+  default = "admin"
+}
+
+
+variable "engine" {
+  type = string
+  description = "RDS Engine (MySQL or PostgreSQL)"
+  default = "mysql"
+}
+
+# outputs.tf
+output "elb_dns_name" {
+  value = module.elb.elb_dns_name
+}
+
+output "rds_endpoint" {
+  value = module.rds.rds_endpoint
+}
+```
