@@ -186,7 +186,11 @@ Collaborate with the development and design teams to implement necessary securit
 
 
 
+## Diagram
 
+Here’s a visual representation of the workflow:
+
+```plaintext
 +--------------------+            +--------------------+            +--------------------+
 |                    |            |                    |            |                    |
 |  Design Agent      |            |  Developer Agent   |            |  Security Specialist|
@@ -207,6 +211,7 @@ Collaborate with the development and design teams to implement necessary securit
 |                    |            |                    |            | 8. Documentation    |
 |                    |            |                    |            | and Reporting        |
 +--------------------+            +--------------------+            +--------------------+
+
 
 
 
